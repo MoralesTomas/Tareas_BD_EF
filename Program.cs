@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 //antes de contruir la app vamos a preparar el entorno de EF
 //ahora vamos a hacer la conexion a una BD de sql server local 
 
-builder.Services.AddSqlServer<TareasContext>("Data Source=BARTOMORA\\SQLEXPRESS;Initial Catalog=TareasDb;user id=username;password=pass;TrustServerCertificate=True");
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("cnTareas"));
 //recordar que solo puede haber una configuracion de services por cada contexto.
 
 #region comentarioParametros
