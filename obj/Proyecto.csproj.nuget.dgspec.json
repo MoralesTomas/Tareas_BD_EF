@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\Proyecto.csproj": {}
+    "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\Proyecto.csproj": {}
   },
   "projects": {
-    "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\Proyecto.csproj": {
+    "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\Proyecto.csproj",
+        "projectUniqueName": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\Proyecto.csproj",
+        "projectPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\Proyecto.csproj",
         "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-        "outputPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\obj\\",
+        "outputPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenov\\AppData\\Roaming\\NuGet\\NuGet.Config",

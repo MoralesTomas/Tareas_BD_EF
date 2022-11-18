@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Llmb+iMPWBDmyb3Nf5bf/H4D6JRDvpAY6i8CPnY+c7urxtQ0D/uqgQ7PxiZrAkQrqR0C3+s7oaPcgE/4PFpmFA==",
+  "dgSpecHash": "J6/KWbUE5PM8SFpcy5577zRbO67u3EEUr5/51EcrmRiPsPj+srkZJ+F9cHuxofVxq7Njwhj1Z79xzCv2qfTW6g==",
   "success": true,
-  "projectFilePath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\Proyecto\\Proyecto.csproj",
+  "projectFilePath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\Fundamentos_entity_Framework\\DesdeGit\\Tareas_BD_EF\\Proyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenov\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lenov\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
