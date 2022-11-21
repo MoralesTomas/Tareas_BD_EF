@@ -58,7 +58,9 @@ public class TareasContext:DbContext
 
             tarea.Property(p=> p.FechaCreacion);
 
-            //no se coloco la propiedad de resumen para que no haga el mapped
+            //para que no haga el mapeo de la propiedad resumen
+
+            tarea.Ignore(p=> p.Resumen);
 
         });
 
