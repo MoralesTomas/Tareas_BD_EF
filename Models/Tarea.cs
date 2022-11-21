@@ -7,14 +7,14 @@ public class Tarea
 {
 
     //usando DataAnnotations
-    [Key]
-    public Guid TareaID { get; set; }
+    // [Key]
+    public Guid TareaId { get; set; }
 
-    [ForeignKey("CategoriaId")]
+    // [ForeignKey("CategoriaId")]
     public Guid CategoriaID { get; set; }
 
-    [Required]
-    [MaxLength(200)]
+    // [Required]
+    // [MaxLength(200)]
     public string Titulo { get; set; }
 
     public string Descripcion { get; set; }
@@ -32,7 +32,8 @@ public class Tarea
     elementos en una clase derivada.
     */
 
-    [NotMapped]
+    // [NotMapped]
+    //para que no se haga el Mapped basta con no declarar la propiedad
     public string Resumen {get;set;}
 
 }

@@ -5,11 +5,8 @@ namespace proyectoEF.Models;
 public class Categoria
 {
     //usando DataAnnotations
-    [Key]
+    // [Key] ya no se utilizara las dataAnnotations y en su lugar se usara Fluent API
     public Guid CategoriaID { get; set; }
-
-    [Required]
-    [MaxLength(150)]
 
     public string Nombre { get; set; }
 
