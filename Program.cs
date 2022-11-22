@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using proyectoEF.Contexto;
+using proyectoEF.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,30 @@ app.MapGet("/dbconexion", async ([FromServices] TareasContext dbContext) =>
     //es decir podriamos ver la BD en el servidor sql server
     return Results.Ok("Base de datos en memoria?: " + dbContext.Database.IsInMemory());
 
+});
+
+//consumiendo la app
+
+app.MapGet("/api/tareas", async ([FromServices] TareasContext dbContext)=>
+{
+    return Results.Ok(dbContext.Tareas.Include(p=> p.Categoria).Where(p=> p.PrioridadTarea == proyectoEF.Models.TiposPrioridad.Baja));
+});
+
+//Post para agregar datos
+app.MapPost("/api/tareas", async ([FromServices] TareasContext dbContext, [FromBody] Tarea tarea)=>
+{
+
+    //por si no viene en el post le asignamos un nuevo ID y una fecha, en caso de que si venga 
+    //se sobreescribe
+    tarea.TareaId = Guid.NewGuid();
+    tarea.FechaCreacion = DateTime.Now;
+    //esto es para agregarlo de manera asincrona y el await es para que espere a que termine
+    await dbContext.AddAsync(tarea);
+    //await dbContext.Tareas.AddAsync(tarea);
+
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok();   
 });
 
 app.Run();
